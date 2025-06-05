@@ -4,13 +4,14 @@ yay -Sy zsh
 # sudo chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-yay -Sy neovim btop git
+yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-cli
 
-./setup_docker.sh
-
+# Hyprland & co
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync
 
-# Install apps
+# Apps
+yay -Sy gimp obs-studio vlc localsend
 
-yay -Sy gimp obs-studio vlc
-
+# Setup languages
+./languages/setup_node.sh
+./languages/setup_ruby.sh
