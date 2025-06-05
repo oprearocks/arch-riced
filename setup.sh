@@ -1,6 +1,18 @@
 #!/bin/bash
 
-yay -Sy zsh
+yay -Sy zsh stow
+
+# Setup shortcuts to configs
+stow alacritty
+stow backgrounds
+stow hypridle
+stow hyprland
+stow hyprlock
+stow hyprpaper
+stow neofetch
+stow waybar
+stow wofi
+
 # sudo chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
