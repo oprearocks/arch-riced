@@ -18,8 +18,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-cli
 
+# fonts
+yay -Sy ttf-ms-fonts ttf-google-fonts-git
 # Hyprland & co
-yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync
+yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
 
 # Apps
 yay -Sy gimp obs-studio vlc localsend
