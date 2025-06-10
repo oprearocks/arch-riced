@@ -1,0 +1,48 @@
+window {
+  padding: 0;
+  background: transparent;
+  font-size: 16px;
+  font-family: "JetBrains Mono";
+  border: 2px solid #d3d3d3;
+}
+
+#input {
+  margin: 20px;
+  padding: 8px 12px;
+  background-color: alpha(#fff, 0.3);
+  border: 2px solid #d3d3d3;
+}
+
+#input:focus {
+  background-color: alpha(#fff, .4);
+}
+
+#inner-box {
+}
+
+#outer-box {
+  background-color: alpha(#000, 0.6);
+}
+
+#scroll {
+}
+
+#img {
+  margin-right: 10px;
+}
+
+#img:selected {
+}
+
+#text:selected {
+}
+
+#entry {
+  margin: 10px 20px;
+  padding: 8px 12px;
+}
+
+#entry:selected {
+  background-color: alpha(#fff, 0.3);
+  border: 2px solid #d3d3d3;
+}
