@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pacman -Sy brigthnessctl pipewire-pulse
 yay -Sy zsh stow
 
 # Setup shortcuts to configs
@@ -19,12 +20,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-cli
 
 # fonts
-yay -Sy ttf-ms-fonts ttf-google-fonts-git
+yay -Sy ttf-ms-fonts ttf-google-fonts-git xorg-fonts-100dpi
 # Hyprland & co
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
 
 # Apps
-yay -Sy gimp obs-studio vlc localsend
+yay -Sy gimp obs-studio vlc localsend obsidian
 
 # Setup languages
 ./languages/setup_node.sh
