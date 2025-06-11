@@ -41,11 +41,12 @@ yay -Sy ttf-ms-fonts ttf-google-fonts-git xorg-fonts-100dpi
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
 
 # Apps
-yay -Sy gimp obs-studio vlc localsend obsidian
+yay -Sy gimp obs-studio vlc localsend obsidian 1password
 
 yay -Sy nordvpn-gui
 groupadd -r nordvpn
 usermod -aG nordvpn $USER
+sudo systemctl enable --now nordvpnd
 
 # Setup languages
 ./languages/setup_node.sh
