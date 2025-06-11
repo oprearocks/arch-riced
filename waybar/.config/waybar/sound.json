@@ -1,0 +1,32 @@
+{
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth": "{icon} ",
+    "format-bluetooth-muted": "  {icon} ",
+    "format-muted": " ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [" ", " ", " "]
+    },
+    "scroll-step": 5,
+    "on-click-right": "pavucontrol",
+    "on-click": "pulsemixer --toggle-mute"
+  },
+  "pulseaudio#mic": {
+    "format": "{icon} {format_source}",
+    "format-source": " ",
+    "format-source-muted": "",
+    "on-click-right": "pavucontrol",
+    "on-click": "pulsemixer --id source-91 --toggle-mute"
+  },
+
+  "group/sound": {
+    "orientation": "horizontal",
+    "modules": ["pulseaudio", "pulseaudio#mic"]
+  }
+}

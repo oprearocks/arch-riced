@@ -1,6 +1,8 @@
 #!/bin/bash
+pacman -S xdg-desktop-portal-hyprland
+pacman -R xdg-desktop-portal-gtk xdg-desktop-portal-gnome
 
-pacman -Sy brigthnessctl pipewire-pulse
+pacman -Syu brigthnessctl pipewire pipewire-{jack,alsa,pulse} nm-connection-editor
 yay -Sy zsh stow
 
 # Setup shortcuts to configs
@@ -30,3 +32,8 @@ yay -Sy gimp obs-studio vlc localsend obsidian
 # Setup languages
 ./languages/setup_node.sh
 ./languages/setup_ruby.sh
+
+# Setup Docker
+# Install docker here
+systemctl disable docker.service
+systemctl enable docker.socket
