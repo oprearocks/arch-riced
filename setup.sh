@@ -1,8 +1,22 @@
 #!/bin/bash
-pacman -S xdg-desktop-portal-hyprland
-pacman -R xdg-desktop-portal-gtk xdg-desktop-portal-gnome
+sudo pacman -S xdg-desktop-portal-hyprland
+sudo pacman -R xdg-desktop-portal-gtk xdg-desktop-portal-gnome
 
-pacman -Syu brigthnessctl pipewire pipewire-{jack,alsa,pulse} nm-connection-editor
+# Displays
+sudo pacman -Sy brigthnessctl
+
+# Sound
+sudo pacman -Syu pipewire pipewire-{jack,alsa,pulse} wireplumber
+
+# Network
+sudo pacman -Synm-connection-editor
+
+# Bluetooth
+sudo pacman -Sy bluez bluez-utils blueman polkit
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+systemctl status bluetooth.service
+
 yay -Sy zsh stow
 
 # Setup shortcuts to configs
@@ -21,13 +35,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-cli
 
-# fonts
+# Fonts
 yay -Sy ttf-ms-fonts ttf-google-fonts-git xorg-fonts-100dpi
 # Hyprland & co
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
 
 # Apps
 yay -Sy gimp obs-studio vlc localsend obsidian
+
+yay -Sy nordvpn-gui
+groupadd -r nordvpn
+usermod -aG nordvpn $USER
 
 # Setup languages
 ./languages/setup_node.sh
