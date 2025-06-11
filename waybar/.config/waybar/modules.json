@@ -120,11 +120,15 @@
 
   // Bluetooth
   "bluetooth": {
-    "format-disabled": "",
-    "format-off": "",
+    "format": "",
+    "format-off": "",
+    "format-disabled": "",
     "interval": 30,
-    "on-click": "blueman-manager",
-    "format-no-controller": ""
+    "format-connected": " ",
+    "format-connected-battery": " ",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n {device_alias}\t{device_battery_percentage}%\t{device_address}",
+    "on-click": "blueman-manager"
   },
 
   // Other
