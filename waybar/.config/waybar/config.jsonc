@@ -10,19 +10,16 @@
   "margin-right": 0,
   "mode": "dock",
   "reload_style_on_change": true,
+  "output": ["*"],
   "include": [
     "~/.config/waybar/modules.json",
     "~/.config/waybar/quicklinks.json",
     "~/.config/waybar/hardware.json",
     "~/.config/waybar/media.json",
-    "~/.config/waybar/sound.json"
+    "~/.config/waybar/sound.json",
   ],
-  "modules-center": [
-    "clock",
-  ],
-  "modules-left": [
-    "hyprland/workspaces"
-  ],
+  "modules-center": ["clock"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-right": [
     "group/media",
     "network",
@@ -32,6 +29,6 @@
     "group/hardware",
     "battery",
     "custom/notification",
-    "idle_inhibitor"
-  ]
+    "idle_inhibitor",
+  ],
 }

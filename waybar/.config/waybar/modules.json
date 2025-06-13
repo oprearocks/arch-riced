@@ -2,17 +2,43 @@
   // Workspaces
   "hyprland/workspaces": {
     "on-click": "activate",
-    "active-only": false,
     "all-outputs": true,
-    "format": "{}",
+    "show-special": false,
+    "ignore-workspaces": [
+      "special",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "format": "{name}. {icon}",
     "format-icons": {
-      "urgent": "",
-      "active": "",
-      "default": ""
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
     },
     "persistent-workspaces": {
-      "*": 6
-    }
+      "1": [], // Ensure workspace 1 always exists
+      "2": [], // Ensure workspace 2 always exists
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    },
+    "sort-by-number": true // Sort workspaces by ID to maintain consistent numbering
   },
 
   // Hyprland Window
