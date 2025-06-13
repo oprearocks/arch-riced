@@ -29,6 +29,9 @@ stow hyprpaper
 stow neofetch
 stow waybar
 stow wofi
+stow ssh
+
+systemctl --user enable --now ssh-agent
 
 # sudo chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -37,11 +40,15 @@ yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-
 
 # Fonts
 yay -Sy ttf-ms-fonts ttf-google-fonts-git xorg-fonts-100dpi
+
 # Hyprland & co
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
 
 # Apps
 yay -Sy gimp obs-studio vlc localsend obsidian 1password
+
+# Monitors (hotplug)
+sudo pacman -Sy socat jq
 
 yay -Sy nordvpn-gui
 groupadd -r nordvpn
