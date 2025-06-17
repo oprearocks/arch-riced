@@ -38,8 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 yay -Sy neovim btop git lazygit lazydocker mise fd fzf lua luarocks tree-sitter-cli
 
-# Fonts
-yay -Sy ttf-ms-fonts ttf-google-fonts-git xorg-fonts-100dpi
+./scripts/fonts.sh
 
 # Hyprland & co
 yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wlogout
@@ -58,6 +57,7 @@ sudo systemctl enable --now nordvpnd
 # Setup languages
 ./languages/setup_node.sh
 ./languages/setup_ruby.sh
+./languages/setup_dotnet.sh
 
 # Setup Docker
 # Install docker here
