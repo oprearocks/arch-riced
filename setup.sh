@@ -62,6 +62,8 @@ sudo systemctl enable --now nordvpnd
 ./languages/setup_ruby.sh
 ./languages/setup_dotnet.sh
 
+gem install tmuxinator
+
 # Setup Docker
 # Install docker here
 systemctl disable docker.service
