@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/share/mise/shims:$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:$PATH:$HOME/.dotnet/tools/
+export PATH=$HOME/.local/share/mise/shims:$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:$PATH:$HOME/.dotnet/tools
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
