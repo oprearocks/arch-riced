@@ -9,7 +9,7 @@ sudo pacman -Sy brigthnessctl
 sudo pacman -Syu pipewire pipewire-{jack,alsa,pulse} wireplumber
 
 # Network
-sudo pacman -Synm-connection-editor
+sudo pacman -Sy nm-connection-editor
 
 # Bluetooth
 sudo pacman -Sy bluez bluez-utils blueman polkit
@@ -17,6 +17,8 @@ sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 systemctl status bluetooth.service
 
+# USB stuff
+sudo pacman -Sy usbutils
 yay -Sy zsh stow
 
 # Setup shortcuts to configs
