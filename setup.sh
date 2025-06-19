@@ -47,6 +47,7 @@ yay -Sy hyprland hyprshot hyprpaper hypridle hyprlock wayland waypaper swaync wl
 
 # Apps
 yay -Sy gimp obs-studio vlc localsend obsidian 1password
+sudo pacman -Sy xournalpp
 
 # Monitors (hotplug)
 sudo pacman -Sy socat jq
