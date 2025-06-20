@@ -63,6 +63,7 @@ sudo systemctl enable --now nordvpnd
 ./languages/setup_dotnet.sh
 
 gem install tmuxinator
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
 
 # Setup Docker
 # Install docker here
