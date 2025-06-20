@@ -1,8 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 
--- require("tokyonight").setup({
---   style = "night",
--- })
--- vim.cmd([[colorscheme tokyonight]])
-
+vim.opt.termguicolors = true
 require("config.lazy")

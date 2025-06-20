@@ -42,4 +42,4 @@ size = 12.0
 # small box when a HEX is detected by the editor.
 
 [general]
-import = ["~/.config/alacritty/themes/themes/tokyo_night.toml"]
+import = ["~/.config/alacritty/themes/themes/tokyo_night_storm.toml"]
