@@ -28,7 +28,7 @@ stow hypridle
 stow hyprland
 stow hyprlock
 stow hyprpaper
-stow neofetch
+# stow neofetch
 stow waybar
 stow wofi
 stow ssh
