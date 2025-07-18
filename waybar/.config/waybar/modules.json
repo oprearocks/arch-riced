@@ -99,16 +99,16 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "{bandwidthDownBytes}   ",
-    "format-ethernet": "   {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-wifi": " \udb82\udd28 ",
+    "format-ethernet": " \udb80\ude00  {bandwidthDownBytes}  {bandwidthUpBytes} ",
     "format-disconnected": "Not connected",
-    "tooltip-format": "  {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format": " \udb80\ude00 {ifname} via {gwaddri}",
+    "tooltip-format-wifi": " \udb80\ude00 {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": " \uf0c1 {ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": " \udb82\udd2d ",
     "max-length": 50,
     "interval": 1,
-    "on-click": "nm-connection-editor"
+    "on-click": "alacritty --class=NmTui --title=NetworkManager -e nmtui"
   },
 
   // Battery

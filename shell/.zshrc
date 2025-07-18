@@ -110,7 +110,6 @@ source $HOME/dotfiles/shell/aliases
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f $HOME/.config/.dart-cli-completion/zsh-config.zsh ]] && . $HOME/.config/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
-fastfetch
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
